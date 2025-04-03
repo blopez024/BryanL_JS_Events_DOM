@@ -24,3 +24,16 @@ clickMeElement.addEventListener("click", function () {
     // Add some HTML with the element we grabbed
     clickMeElement.innerText = "You clicked me!"
 })
+
+randomColorBtnElement = document.getElementById("randomColorBtn")
+
+function changeBackgroundColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const randomColor = `rgb(${r},${g},${b})`
+
+    document.body.style.backgroundColor = randomColor;
+}
+
+randomColorBtnElement.addEventListener("click", changeBackgroundColor);
