@@ -20,7 +20,7 @@ document.addEventListener("keydown", function (e) {
 clickMeElement = document.getElementById("clickMe");
 
 // When the button is click, this will be fired
-document.addEventListener("click", function () {
+clickMeElement.addEventListener("click", function () {
     // Add some HTML with the element we grabbed
     clickMeElement.innerText = "You clicked me!"
 })
