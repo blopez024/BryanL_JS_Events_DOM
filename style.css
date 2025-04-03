@@ -17,3 +17,15 @@
   background-color: black;
   color: white;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 3rem; */
+}
+
+button {
+  margin-top: 10px;
+}

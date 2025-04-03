@@ -38,7 +38,7 @@ This lab will guide you through hands-on exercises with JavaScript DOM events, d
 
 ### 1 - 6 Exercises:
 
-![js dom preview](./assets/js_dom_preview.png)
+![js dom preview](./assets/js_dom_events_preview.gif)
 
 ### To-Do List Exercise:
 
