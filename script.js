@@ -32,7 +32,7 @@ clickMeElement.addEventListener("click", function () {
 //-------------------------------------------------------------------------------------
 
 // Get the element with an id of "randomColorBtn" 
-randomColorBtnElement = document.getElementById("randomColorBtn")
+let randomColorBtnElement = document.getElementById("randomColorBtn")
 
 // Function that generates a random color for the background color
 function changeBackgroundColor() {
@@ -52,10 +52,29 @@ randomColorBtnElement.addEventListener("click", changeBackgroundColor);
 
 //  Function that adds and removes class targeted by query selector
 function changeBtnStyle() {
-    // Target element with class "coolButton"
+    // Target element with the id "coolButton"
     const btn = document.querySelector("#coolButton");
     // Toggle class "cool-btn" defined in styles.css
     btn.classList.toggle("cool-btn")
     // Toggle class "glow" defined in styles.css
     btn.classList.toggle("glow");
+}
+
+//-------------------------------------------------------------------------------------
+
+// Get the element with an id of "themeButton"
+let themeButtonElement = document.getElementById("themeButton");
+
+// Function that switches color themes
+function changeTheme() {
+    // Adds / Removes dark mode class
+    document.body.classList.toggle("dark-mode")
+    // If it has dark mode class, button text is set to Light Mode
+    // Else button text is set to Dark Mode
+    if (document.body.classList.contains("dark-mode")) {
+        themeButtonElement.textContent = "Light Mode";
+    } else {
+        themeButtonElement.textContent = "Dark Mode";
+    }
+
 }
